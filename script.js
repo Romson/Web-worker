@@ -12,7 +12,7 @@ function handleData(data) {
     return response;
 }
 //New instance of web worker
-var worker = new Worker("WorkerFile.js");
+var worker = new Worker('WorkerFile.js');
 //Continue referencing web worker to either terminate or listen for messages.
 //Listen
 worker.onmessage = function (event) {
@@ -26,9 +26,9 @@ worker.terminate();
 var worker;
 //Listen - referenced by app from a separate js file ('worker.js')
 function startWorker() {
-    worker = new Worker("js/worker.js");
+    worker = new Worker('js/worker.js');
     worker.onmessage = function(event) {
-        document.getElementById("output").innerHTML += '<li>' + event.data + '</li>';
+        document.getElementById('output').innerHTML += '<li>' + event.data + '</li>';
     };
 }
 //Terminate
