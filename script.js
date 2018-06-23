@@ -24,7 +24,7 @@ worker.terminate();
 
 //Example
 var worker;
-//Listen - referenced by app from a separate js file ('workers.js')
+//Listen - referenced by app from a separate js file ('worker.js')
 function startWorker() {
     worker = new Worker("js/worker.js");
     worker.onmessage = function(event) {
