@@ -21,7 +21,6 @@ worker.onmessage = function (event) {
 //Terminate
 worker.terminate();
 */
-
 //Example
 var worker;
 //Listen - referenced by app from a separate js file ('worker.js')
